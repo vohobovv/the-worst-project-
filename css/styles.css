@@ -1,0 +1,7 @@
+* {
+	/* border: 1px solid red !important; */
+}
+
+iframe {
+	filter: invert(100%);
+}
