@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="./css/styles.css">
 	<title>Wallz</title>
 </head>
@@ -15,7 +16,7 @@
 			<img class="w-full h-[300px] md:h-[500px]" src="./images/background.jpg" alt="background">
 			<img style="box-shadow: 0px 4px 24.2px 0px #0000000F;"
 				class="rounded-full w-[150px] h-[150px] md:w-[300px] md:h-[300px] absolute left-1/2 top-full object-cover transform -translate-x-1/2 -translate-y-1/2 mb-[50px] md:mb-[100px] z-10"
-				src="./images/logo.JPEG" alt="logo">
+				src="./images/logo.jpg" alt="logo">
 		</div>
 		<div class="my-[100px] md:my-[200px] text-center px-4">
 			<h3 class="font-semibold text-[32px] md:text-[42px] leading-[40px] md:leading-[60px] text-[#000000] mb-[15px]">
@@ -30,7 +31,10 @@
 	<main>
 		<section class="md:mb-[170px] max-w-[1200px] mx-auto md:px-[0px] px-[20px]">
 			<div class="flex flex-col md:flex-row gap-[40px] md:gap-[120px]">
-				<div class="max-w-full md:max-w-[680px]">
+				<div data-aos="fade-left"
+				data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="2000" class="max-w-full md:max-w-[680px]">
 					<h2
 						class="font-semibold text-[32px] md:text-[41px] leading-[40px] md:leading-[51px] text-[#000000] mb-[36px]">
 						O'zimiz haqimizda</h2>
@@ -47,32 +51,47 @@
 						Agar siz interyeringizni noyob ko‘rinishga keltirishni istasangiz, biz bilan bog‘laning –
 						biz sizning g‘oyalaringizni hayotga tadbiq etamiz!</p>
 				</div>
-				<div class="md:max-w-[390px] md:h-[300px] flex flex-col md:flex-row md:gap-4 relative w-full">
+				<div data-aos="fade-up-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="2000" class="md:max-w-[390px] md:h-[300px] flex flex-col md:flex-row md:gap-4 relative w-full">
 					<img class="md:w-[330px] h-[330px] w-full object-cover md:absolute right-[45%] md:right-[16%]"
-						src="./images/1-section/paints-1.png" alt="Paints">
+						src="./images/1-section/paints-1.jpg" alt="Paints"><br>
 					<img class="md:w-[269px] md:h-[184px] w-full object-cover md:absolute md:top-[70%] md:right-[-1%]"
-						src="./images/1-section/paints-2.png" alt="Steam" title="steam">
+						src="./images/1-section/paints-2.JPG" alt="Steam" title="steam">
 				</div>
 			</div>
 		</section>
 
-		<section class="mb-[50px] md:mb-[280px] md:pt-[200px] px-4 pt-[300px] max-w-[1200px] mx-auto">
+		<section class="mb-[50px] md:mb-[280px] md:pt-[200px] px-4 pt-[200px] max-w-[1200px] mx-auto">
 			<div class="flex flex-col md:flex-row justify-between gap-4">
-				<div class="w-full md:w-[480px] md:h-[400px] h-auto relative grid grid-cols-2">
-					<img class="md:w-[326px] md:h-[440px] object-cover w-full md:absolute md:top-[-30px]"
-						src="./images/2-section/paint-1.png" alt="Paint">
-					<img
+				<div class="w-full md:w-[480px] md:h-[400px] h-auto relative grid grid-cols-2 gap-[10px]">
+					<img data-aos="fade-down-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="2000" class="md:w-[326px] md:h-[440px] object-cover w-full h-full md:absolute md:top-[-30px]"
+						src="./images/2-section/paints-1.JPG" alt="Paint">
+					<!-- <img
 						class="md:w-[342px] md:h-[214px] h-[100%] object-cover w-full md:absolute md:left-[17%] md:top-[65%] md:left-[25%] md:bottom-[-20%]"
-						src="./images/2-section/paint-2.png" alt="Paint">
-					<img
-						class="md:w-[214px] md:h-[256px] object-cover w-full col-span-2 md:absolute md:bottom-[-20%] md:left-[67%] md:bottom-[30%]"
-						src="./images/2-section/paint-3.png" alt="Paint">
+						src="./images/2-section/paints-2.PNG" alt="Paint"> -->
+					<img data-aos="fade-up-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="2000"
+						class="md:w-[214px] md:h-[256px] md:inline-block object-cover w-full md:absolute  md:left-[72%] md:bottom-[30%]"
+						src="./images/2-section/paints-2.PNG" alt="Paint">
+					<img data-aos="fade-up-left" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="2000"
+					  class="md:w-[340px] md:h-[230px] h-[310px] object-cover w-full col-span-2 md:absolute md:bottom-[-33%] md:left-[34%]"
+						src="./images/2-section/paints-3.jpg" alt="Paint">
 				</div>
 				<div class="w-full md:w-[454px] h-[433px] pt-[40px] px-[20px]">
-					<h2
+					<h2 data-aos="zoom-in-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="2000"
 						class="font-semibold text-[32px] md:text-[41px] leading-[40px] md:leading-[51px] text-[#000000] mb-[36px]">
 						Missiyamiz</h2>
-					<p class="font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-[#000000]">
+					<p data-aos="zoom-in-down" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="2000" class="font-normal text-[16px] md:text-[18px] leading-[26px] md:leading-[30px] text-[#000000]">
 						Biz mijozlarimizga eksklyuziv va zamonaviy interyer muhitini yaratishga yordam beramiz. Biz ijodkorlik,
 						innovatsiya va sifatni birlashtirib, har devorga o‘ziga xos hayot bag‘ishlaymiz. Har bir dizayn – bu nafaqat
 						bezak, balki muhitga yangi ruh va energiya olib kiradigan san’at asaridir.
@@ -92,41 +111,75 @@
 				</p>
 			</div>
 			<div class="flex flex-wrap gap-[10px] md:gap-[20px] justify-evenly p-[10px] md:p-[30px]">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="500" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/steam.JPG"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-1.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="600" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover"
+					src="./images/3-section/art-is-freedom.JPG" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="700" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover"
+					src="./images/3-section/background-logos.JPG" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="800" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/einstein.JPG"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-2.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="900" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/jadidlar.JPG"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-3.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1000" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover"
+					src="./images/3-section/microphones.JPG" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1100" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/1-section/paints-1.jpg"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-4.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1200" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover"
+					src="./images/3-section/change-view.PNG" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1300" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/castle.png"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-5.png"
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1400" class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/4-section/Image-1.png"
 					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-6.png"
-					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/3-section/Image-7.png"
-					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/4-section/Image-6.png"
-					alt="paint">
-				<img class="grow h-[200px] md:h-[300px] w-[45%] md:w-[20%] object-cover" src="./images/4-section/Image-1.png"
-					alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-2.png" alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-3.png" alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-4.png" alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-5.png" alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image.png" alt="paint">
-				<img class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-7.png" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1500" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-2.png" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1600" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-3.png" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1700" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/3-section/asko.JPG" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1800" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-5.png" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="1900" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image.png" alt="paint">
+				<img data-aos="fade-right" data-aos-anchor="#example-anchor"
+				data-aos-offset="500"
+				data-aos-duration="2000" class="grow h-[300px] w-[35%] md:w-[20%] object-cover" src="./images/4-section/Image-7.png" alt="paint">
 
 			</div>
 		</section>
 
-		<section class="bg-[#EDEDED] py-10">
+		<section class="bg-[#EDEDED] py-10 hidden md:block">
 			<div class="max-w-4xl mx-auto px-4">
 				<h2 class="text-center text-3xl font-bold text-gray-700 mb-8">Mijozlarimizning fikrlari</h2>
 				<div class="p-6 flex flex-col items-center gap-6 max-w-3xl mx-auto">
-					<div class="flex gap-[20px] mb-[60px]">
+					<div data-aos="zoom-in-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex gap-[20px] mb-[60px]">
 						<img src="./images/comment/comment.jpg" alt="Mamirov Abdulboriy"
 							class="w-20 h-20 rounded-full object-cover border-4 border-gray-300">
 						<div class="message-box relative">
@@ -140,7 +193,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="flex gap-[20px] mb-[60px]">
+					<div data-aos="zoom-in-left" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex gap-[20px] mb-[60px]">
 						<div class="message-box relative">
 							<div class="bg-white shadow-lg rounded-xl">
 								<h4 class="font-semibold text-xl text-[#474747] mb-2 ml-[26px] p-[10px]">Turdiyev Jamshid</h4>
@@ -153,7 +208,9 @@
 						<img src="./images/comment/comment2.jpg" alt="Turdiyev Jamshid"
 							class="w-20 h-20 rounded-full object-cover border-4 border-gray-300">
 					</div>
-					<div class="flex gap-[20px] mb-[60px]">
+					<div data-aos="zoom-in-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex gap-[20px] mb-[60px]">
 						<img src="./images/comment/comment.jpg" alt="Mamirov Abdulboriy"
 							class="w-20 h-20 rounded-full object-cover border-4 border-gray-300">
 						<div class="message-box relative">
@@ -254,47 +311,61 @@
 		</section>
 
 		<section class="bg-[#F7F8F8] pt-[64px] md:pt-[120px] pb-[64px] md:pb-[120px]">
-      <div class="max-w-[1351px] mx-auto px-5">
-        <h2 class="font-semibold text-xl md:text-[32px] leading-7 md:leading-[44px] text-[#3D4641] mb-8 md:mb-[60px]">
-          Biz mijozlarimizni qo‘llab-quvvatlaymiz</h2>
-        <div class="flex flex-col md:flex-row gap-5">
-          <div class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
-            style="box-shadow: 0px 4px 12px 0px #0000000D;">
-            <img class="w-[52px] h-[52px]" src="./images/5-section/example.png" alt="refresh img">
-            <div>
-              <h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
-                Dizayn yangilanishlari </h3>
-              <p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Mijozlarimiz uchun har doim zamonaviy va jozibali dizayn taklif qilamiz. Bizning xizmatlarimiz doimo so‘nggi trendlar asosida yangilanib boradi. </p>
-            </div>
-          </div>
-          <div class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
-            style="box-shadow: 0px 4px 12px 0px #0000000D;">
-            <img class="w-[52px] h-[52px]" src="./images/5-section/example-2.png" alt="refresh img">
-            <div>
-              <h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
+			<div class="max-w-[1351px] mx-auto px-5">
+				<h2 class="font-semibold text-xl md:text-[32px] leading-7 md:leading-[44px] text-[#3D4641] mb-8 md:mb-[60px]">
+					Biz mijozlarimizni qo‘llab-quvvatlaymiz</h2>
+				<div class="flex flex-col md:flex-row gap-5">
+					<div data-aos="flip-left" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
+						style="box-shadow: 0px 4px 12px 0px #0000000D;">
+						<img class="w-[52px] h-[52px]" src="./images/5-section/example.png" alt="refresh img">
+						<div>
+							<h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
+								Dizayn yangilanishlari </h3>
+							<p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Mijozlarimiz uchun
+								har doim zamonaviy va jozibali dizayn taklif qilamiz. Bizning xizmatlarimiz doimo so‘nggi trendlar
+								asosida yangilanib boradi. </p>
+						</div>
+					</div>
+					<div data-aos="flip-left" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1300" class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
+						style="box-shadow: 0px 4px 12px 0px #0000000D;">
+						<img class="w-[52px] h-[52px]" src="./images/5-section/example-2.png" alt="refresh img">
+						<div>
+							<h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
 								Foydali ma’lumotlar </h3>
-              <p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Saytimizda siz devor bo‘yash bo‘yicha foydali maslahatlar, trendlar va qo‘llanmalar bilan tanishishingiz mumkin. Tajribali mutaxassislarimiz sizga eng yaxshi echimlarni taklif qilishadi. </p>
-            </div>
-          </div>
-          <div class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
-            style="box-shadow: 0px 4px 12px 0px #0000000D;">
-            <img class="w-[52px] h-[52px]" src="./images/5-section/example.png" alt="refresh img">
-            <div>
-              <h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
+							<p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Saytimizda siz
+								devor bo‘yash bo‘yicha foydali maslahatlar, trendlar va qo‘llanmalar bilan tanishishingiz mumkin.
+								Tajribali mutaxassislarimiz sizga eng yaxshi echimlarni taklif qilishadi. </p>
+						</div>
+					</div>
+					<div data-aos="flip-left" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1400" class="flex gap-[32px] md:max-w-[424px] rounded-[20px] p-[40px]"
+						style="box-shadow: 0px 4px 12px 0px #0000000D;">
+						<img class="w-[52px] h-[52px]" src="./images/5-section/example.png" alt="refresh img">
+						<div>
+							<h3 class="font-semibold text-base md:text-[18px] text-[#2C2B35] leading-[22px] md:leading-7 mb-[10px]">
 								Professional yondashuv</h3>
-              <p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Biz har bir mijozning ehtiyojini chuqur tushunamiz va devor bo‘yash jarayonini mukammal darajada bajarishga intilamiz. Sifat va aniqlik – bizning ustuvorligimiz!</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+							<p class="font-light text-[12px] md:text-sm leading-[14px] md:leading-4 text-[#2C2B35]">Biz har bir
+								mijozning ehtiyojini chuqur tushunamiz va devor bo‘yash jarayonini mukammal darajada bajarishga
+								intilamiz. Sifat va aniqlik – bizning ustuvorligimiz!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-		<section class="md:px-[140px] px-[64px] pt-[90px] md:mb-[90px]">
+		<section class="md:px-[140px] px-[20px] pt-[90px] md:mb-[90px]">
 			<div class="max-w-[1200px]">
 				<h2 class="font-semibold text-[40px] leading-[51px] text-[#000000] text-center mb-[80px]">Biz bilan ishlash
 					sizga yoqadi, chunki...</h2>
 				<div class="grid md:grid-cols-3 gap-[40px] mb-[40px] md:mb-[90px]">
-					<div class="flex max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-up-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background.svg" alt="1">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">Narxni oldindan bilish!</h4>
@@ -302,7 +373,9 @@
 								narxlarini tez va ishonchli hisoblab beramiz</p>
 						</div>
 					</div>
-					<div class="flex md:max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-up-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1400" class="flex md:max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background-1.svg" alt="2">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">Loyiha Dizayni</h4>
@@ -311,7 +384,9 @@
 								yaratishda yordam beramiz</p>
 						</div>
 					</div>
-					<div class="flex max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-up-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1600" class="flex max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background-2.svg" alt="3">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">Kafolat</h4>
@@ -321,7 +396,9 @@
 					</div>
 				</div>
 				<div class="grid md:grid-cols-3 gap-[40px]">
-					<div class="flex md:max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-down-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1200" class="flex md:max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background-3.svg" alt="4">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">Premium sifatli bo'yoqlar</h4>
@@ -332,7 +409,9 @@
 								bag'ishlaydi.</p>
 						</div>
 					</div>
-					<div class="flex md:max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-down-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1400" class="flex md:max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background-4.svg" alt="5">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">O'z ishining professionallari
@@ -344,7 +423,9 @@
 								ustuvor!</p>
 						</div>
 					</div>
-					<div class="flex md:max-w-[360px] justify-between gap-[20px]">
+					<div data-aos="fade-down-right" data-aos-anchor="#example-anchor"
+					data-aos-offset="500"
+					data-aos-duration="1600" class="flex md:max-w-[360px] justify-between gap-[20px]">
 						<img class="w-[60px] h-[60px]" src="./images/numbers/Background-5.svg" alt="6">
 						<div>
 							<h4 class="font-semibold text-[18px] leading-6 text-[#000000] mb-[18px]">Mijozlarimiz uchun qulaylik</h4>
@@ -428,14 +509,20 @@
 
 	<footer class="bg-[#EFEFEF] pt-[50px] px-[40px] md:px-[140px] pb-[140px]">
 		<div class="text-center">
-			<h1 class="font-bold text-[52px] leading-[3px] text-[#3B56B1] text-center">Wallz.uz</h1>
-			<div class="pt-[46px]">
+			<h1 data-aos="fade-right" data-aos-anchor="#example-anchor"
+			data-aos-offset="500"
+			data-aos-duration="1600" class="font-bold text-[52px] leading-[3px] text-[#3B56B1] text-center">Wallz.uz</h1>
+			<div data-aos="fade-left" data-aos-anchor="#example-anchor"
+			data-aos-offset="500"
+			data-aos-duration="1600" class="pt-[46px]">
 				<a class="font-semibold text-[#000000] text-[18px] leading-4 text-center"
 					href="tel:+998915674477">+998915674477</a><br>
 				<a class="font-semibold text-[#000000] text-[18px] leading-4 text-center"
 					href="tel:+998901194400">+998901194400</a>
 			</div>
-			<h3 class="font-bold text-[20px] leading-[31px] text-[#000000] pt-[50px]">Toshkent Shahar <br>
+			<h3 data-aos="fade-right" data-aos-anchor="#example-anchor"
+			data-aos-offset="500"
+			data-aos-duration="1600" class="font-bold text-[20px] leading-[31px] text-[#000000] pt-[50px]">Toshkent Shahar <br>
 				Sergeli Tumani <br>
 				Index 2D</h3>
 			<div class="flex justify-center gap-2 pt-[50px] mb-[50px]">
@@ -457,6 +544,11 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>
