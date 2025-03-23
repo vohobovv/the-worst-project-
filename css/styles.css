@@ -5,3 +5,8 @@
 iframe {
 	filter: invert(100%);
 }
+
+img{
+	border-radius: 20px;
+	box-shadow: 0px 10px 30px rgba(70, 130, 180, 0.6);
+}
